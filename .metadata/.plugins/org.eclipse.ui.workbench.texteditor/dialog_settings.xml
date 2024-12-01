@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="amenitiesview"/>
+		<list key="findhistory">
+			<item value="ManagerView"/>
+			<item value="System.out.println(&quot;Password is not valid&quot;);"/>
+			<item value="viewBooking"/>
+			<item value="RoomTableGUI"/>
+			<item value="inputUser"/>
+			<item value="inputpassword"/>
+			<item value="JPasswordField"/>
+			<item value="passwordLabel"/>
+			<item value="label2"/>
+			<item value="userLabel"/>
+			<item value="loginpage"/>
+			<item value="refreshTable"/>
+			<item value="spa"/>
+			<item value="Bar"/>
+			<item value="aaa"/>
+		</list>
+		<list key="replacehistory">
+			<item value="amenitiesview"/>
+			<item value="ManagerRoomview"/>
+			<item value=""/>
+			<item value="ManagerView"/>
+			<item value="RoomTableGUIs"/>
+			<item value="input1"/>
+			<item value="input2"/>
+			<item value="JTextField"/>
+			<item value="label2"/>
+			<item value="label1"/>
+			<item value="viewBooking"/>
+			<item value="list"/>
+			<item value="tab"/>
+			<item value="restaurant"/>
+			<item value="spa"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1189"/>
+		<item key="DIALOG_Y_ORIGIN" value="407"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

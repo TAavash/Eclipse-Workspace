@@ -1,0 +1,111 @@
+package sign;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+import controller.controllers;
+import model.models;
+import registrationpage.reg;
+public class signin implements ActionListener{
+
+	JFrame frame;
+	JLabel hotelLabel,signLabel,userLabel,passwordLabel;
+	JTextField inputUser; 
+	JPasswordField inputpassword;
+	JButton btn,bt;
+	
+	public signin() {		
+		frame = new JFrame();	
+		hotelLabel = new JLabel("Luton Hotel");
+		frame.add(hotelLabel);
+		hotelLabel.setBounds(100,30,100,30);
+		
+		signLabel = new JLabel("Login Page");
+		frame.add(signLabel);
+		signLabel.setBounds(100,50,100,30);
+		
+		ImageIcon aa=new ImageIcon("..\\registrationpage/src/sign/logos.jpg");
+		JLabel label = new JLabel(aa);
+		label.setBounds(10,10,50,50);
+		frame.add(label);
+        		
+		ImageIcon a=new ImageIcon("..\\registrationpage/src/sign/hotel.jpg");
+		JLabel label1 = new JLabel(a);
+		label1.setBounds(300,10,400,500);
+		frame.add(label1);
+		
+		
+		userLabel = new JLabel("Username:");
+		frame.add(userLabel);
+		userLabel.setBounds(30,150,100,30);
+		
+		passwordLabel= new JLabel("Password:");
+		frame.add(passwordLabel);
+		//Location and dimensions of JFrame
+		//first two are location and rest two dimension from setBounds
+		passwordLabel.setBounds(30,210,100,30);
+		
+		inputUser= new JTextField();
+		inputUser.setBounds(130, 150, 100, 30);
+		frame.add(inputUser);
+		inputpassword= new JPasswordField();
+		inputpassword.setBounds(130, 210, 100, 30);
+		frame.add(inputpassword);
+		
+		btn = new JButton("Submit");
+		btn.addActionListener(this);
+		btn.setBounds(30,300,90,30);
+		frame.add(btn);
+		
+		bt=new JButton("Cancel");
+		bt.setBounds(130, 300, 90, 30);
+		frame.add(bt);
+		
+		
+		//properties of JFrame
+		//this.getContentPane().add(frame);
+		frame.setSize(600,500);
+		frame.setLayout(null);
+		frame.setVisible(true);
+	}
+	
+
+	    public void actionPerformed(ActionEvent ee) {
+		    if (ee.getSource() == btn) {
+		        new reg();
+		    }
+		}
+	   
+
+
+	       public static void main (String args[]) {
+	        	new signin();
+	     
+	        }
+
+		public void actionPerformed1(ActionEvent e) {
+			if(e.getSource() == btn) {
+			       
+				
+			       String user = inputUser.getText();
+			       char[] pass = inputpassword.getPassword();
+			       models s1 = new models();
+			       controllers s2 = new controllers();
+			       boolean result = s2.save(s1);
+			     if (result == true) {
+			       JOptionPane.showMessageDialog(frame,"Save record successful");
+			       inputUser.setText("");
+			       inputpassword.setText("");
+			        
+			       }
+			       else {
+			        JOptionPane.showMessageDialog(frame, "error to save record");
+			       }
+			       
+			
+		}				
+		}}
+
+		
+	
